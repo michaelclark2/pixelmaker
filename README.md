@@ -1,16 +1,16 @@
-# Pixel Art Maker Project
+# Pixel Art Maker Project - Grow with Google Scholarship
 
-## Table of Contents
+## Features
+* Drag and Draw: both on web and mobile
+* Create snapshot of canvas using html2canvas
+* Cross-browser compatible color picker using jQuery plugin, Spectrum
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Languages
+* JavaScript
+* jQuery
 
-## Instructions
+## Areas of opportunity
+- [ ] Automatically download canvas image
+- [ ] Improve styling to emphasize features
+- [ ] Make erase function for easy canvas editing
 
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
