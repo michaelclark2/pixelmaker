@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: "Press Start 2P";
+    font-size: 48px;
+    margin: 0.2em;
+}
+
+h2 {
+    font-family: "Press Start 2P";
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+tr {
+    height: 1em;
+}
+
+td {
+    min-width: 1em;
+    cursor: crosshair;
+}
+
+input[type=number] {
+    width: 6em;
+}
+.btn {
+    border: 2px solid #000;
+    background-image: linear-gradient(#eee -50%, white,#eee 150%);
+    font-weight: bold;
+    border-radius: 6px;
+    height: 2.5em;
+}
+#sizePicker,
+#controls {
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    padding: 5px;
+    margin: 5px auto;
+
+}
+#sizePicker div {
+    margin: 5px;
+}
+#controls {
+    justify-content: space-around;
+    flex-flow: row;
+    width: 300px;
+}
+#screenshotContainer {
+    display: none;
+    background-color: #eee;
+    border: 1px solid black;
+    margin: 2em auto;
+    padding: 1em;
+}
+.canvasContainer{
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid black;
+}
+.wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-around;
+    background-color: #eee;
+    padding: 1em;
+}

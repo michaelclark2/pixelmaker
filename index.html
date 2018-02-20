@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="maximum-scale=1.5,minimum-scale=0.5,initial-scale=1">
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+
+</head>
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        <div>
+            <label for='inputHeight'>Grid Height:</label>
+            <input type="number" id="inputHeight" name="height" min="1" max='50' value="10">
+            <label for="inputWidth">Grid Width:</label>
+            <input type="number" id="inputWidth" name="width" min="1" max='50' value="10">
+        </div>
+        <div>
+            <label for="squareCheck">Make Square:</label>
+            <input type='checkbox' id="squareCheck">
+        </div>
+        <input type="submit" class="btn" value="New Canvas">
+    </form>
+    <h2>Design Canvas</h2>
+    <div id='controls'>
+        <div>
+            <input id="colorPicker">
+        </div>
+        <div> 
+            <label for="borderOption">Hide Grid</label><br>
+            <input type='checkbox' id="borderOption">
+        </div>
+        <input type="button" id="screenshot" class="btn" value="Save">
+        <input type="button" id="reset" class="btn" value="Reset">
+    </div>
+    <div class='wrap'>
+        <div class='canvasContainer'>
+            <table id="pixelCanvas">
+            </table>
+        </div>
+        <div id="screenshotContainer">
+            <h2>Save your image</h2><br>
+        </div>
+    </div>
+    <script src="designs.js"></script>
+</body>
+</html>
